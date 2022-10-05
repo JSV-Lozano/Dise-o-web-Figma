@@ -13,6 +13,15 @@ html {
   display: flex;
   justify-content: center;
 }
+.Container-Menu_Toggle {
+  display: none;
+}
+.Container-Menu_Toggle div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background-color: darkgray;
+}
 header {
   display: flex;
   align-items: center;
@@ -25,16 +34,16 @@ header h1 {
   font-size: 1.8rem;
 }
 header > nav {
-  width: 500px;
+  width: 1000px;
   display: flex;
-  flex-direction: row !important;
   justify-content: space-between;
+  align-items: center;
 }
 header > nav > a {
   text-decoration: none;
   color: white;
 }
-header > button {
+header > nav > button {
   width: 153px;
   height: 46px;
   color: white;
@@ -95,7 +104,6 @@ header > button {
   width: 200px;
   height: 56px;
   background: #3f50e7;
-
   border-radius: 8px;
   border: none;
   font-size: 1.2rem;
@@ -133,10 +141,335 @@ header > button {
   height: 506px;
   left: 815px;
   top: 143px;
-  background: repeating-linear-gradient(-50deg,
-  #3f3b62 0, #3f3b62 40%,
-  #3f3b62 0, #3f3b62 60%,
-  transparent 0,  transparent
+  background: repeating-linear-gradient(
+    -50deg,
+    #3f3b62 0,
+    #3f3b62 40%,
+    #3f3b62 0,
+    #3f3b62 60%,
+    transparent 0,
+    transparent
   );
   border-radius: 8px;
+  margin-bottom: 43px;
+}
+.Container-Info-Data {
+  background-color: #071341;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.InfoData1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  border-bottom: 1px solid #fff;
+}
+.Container-Data {
+  display: flex;
+  margin-bottom: 50px;
+}
+.Vector-Img {
+  fill: #fff;
+  width: 56.14px;
+  height: 56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18.5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.naranja {
+  background-color: #ff6853;
+}
+.rosa {
+  background-color: #ff537c;
+}
+.celeste {
+  background-color: #80d2c4;
+}
+.morado {
+  background-color: #3f50e7;
+}
+.verde {
+  background-color: #95cb7c;
+}
+.Num-P {
+  margin-bottom: 2px;
+}
+.Container-Info-Data > h2 {
+  max-width: 100%;
+  margin-top: 45px;
+  text-align: center;
+  font-size: 3.6rem;
+  width: 1400px;
+  margin-bottom: 15px;
+}
+.Container-Info-Data > p {
+  width: 384px;
+  height: 24px;
+  font-size: 1.2rem;
+  color: #8e88c1;
+}
+.Card-Container > .Card-Primary {
+  width: 208px;
+  height: 300px;
+  background-color: #ffff;
+  box-shadow: 0px 6px 20px rgba(0, 255, 224, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Card-Container > .Card-Primary > img {
+  object-fit: cover;
+}
+.Card-Container > .Card-Primary > p {
+  color: #8e88c1;
+}
+.Card-Container > .Card-Primary > button {
+  width: 118px;
+  height: 30px;
+  border: none;
+  background: #3f50e7;
+  border-radius: 20px;
+  margin-top: 70px;
+}
+.Card-Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+  margin-bottom: 50px;
+}
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 209px;
+  height: 206px;
+  left: 355px;
+  top: 1106px;
+  border: 2px solid #8e88c1;
+  border-radius: 8px;
+  margin: 0px 32px 0px 32px;
+  text-align: center;
+}
+.Cards-Text > img {
+  margin-bottom: 26px;
+}
+.Cards-Text > p {
+  color: #8e88c1;
+  font-size: 1.2rem;
+}
+.Title-CenterPage {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Title-CenterPage > h2 {
+  width: 1050px;
+  height: 100%;
+  color: #ffffff;
+  font-size: 2.6em;
+  text-align: center;
+}
+.Container-Form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 480px;
+  left: 0px;
+  top: 1640px;
+  background: linear-gradient(0deg, rgba(7, 19, 65, 0.4), rgba(7, 19, 65, 0.4)),
+    url(./assents/img/Rectangle\ 25.png);
+}
+.Form {
+  width: 449px;
+  height: 380px;
+  background: #4b4864;
+  border-radius: 8px;
+  margin-right: 115px;
+  display: flex;
+  justify-content: center;
+}
+.Form > .Form-Container {
+  width: 90%;
+  margin-top: 27px;
+}
+.Form > .Form-Container > h2 {
+  margin-bottom: 12px;
+}
+.Form > .Form-Container > p {
+  margin-bottom: 34px;
+  color: #8e88c1;
+}
+.Form > .Form-Container > form {
+  display: flex;
+  flex-direction: column;
+}
+.Form > .Form-Container > form > input {
+  margin-bottom: 16px;
+  width: 377px;
+  height: 42px;
+  background: #646081;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+}
+.Form > .Form-Container > form > input::placeholder {
+  color: #8e88c1;
+  padding-left: 20px;
+}
+.Form > .Form-Container > form > input:focus {
+  border: 3px solid #897afa;
+  outline: none;
+}
+.Form > .Form-Container > button {
+  width: 126px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background: #3f50e7;
+  border-radius: 8px;
+  float: right;
+  margin-right: 30px;
+}
+.Info-Page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #071341;
+}
+.Info-Page > .Info-Page-text {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 56px 0 59px 0;
+}
+
+.Info-Page > .Info-Page-text > .Info-Text-Page h2 {
+  margin-bottom: 20px;
+}
+.Info-Page > .Info-Page-text > .Info-Text-Page > p {
+  margin-bottom: 5px;
+}
+.Info-Page > .Info-Page-text > .Info-Text-Page > .Info-Icons-Page {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  background: #071341;
+}
+@media (max-width: 1024px) {
+  .Container-Info_Home {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Container-Info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .Card-Container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Card-Primary {
+    margin-bottom: 10px;
+  }
+  .Cards {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .Vector{
+    width: 400px;
+  }
+  .Vector-Img{
+    margin-right: 0;
+  }
+  .Container-Info > p {
+    width: 400px;
+    text-align: center;
+  }
+  .Container-Menu_Toggle {
+    display: block;
+  }
+  header > nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 96px;
+    background-color: #24204a;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    justify-content: space-around;
+    transform: translateY(-1000%);
+    -webkit-transform: translateY(-1000%);
+    -moz-transform: translateY(-1000%);
+    -ms-transform: translateY(-1000%);
+    -o-transform: translateY(-1000%);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+  .Toogle-Active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: all 0.5s ease;
+  }
+  header > nav > a {
+    border: 1px solid #ffff;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .InfoData1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Container-Data {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+  }
+  .Container-Info-Data > h2 {
+    font-size: 2.5rem;
+  }
+  .Form {
+    margin: 0;
+  }
+  .Container-Form {
+    max-width: 100%;
+  }
+  .Info-Page-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
